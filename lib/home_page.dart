@@ -29,11 +29,35 @@ class MyHomePage extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Text('ConstantLine',
-                      style: TextStyle(
-                          color: Colors.white.withOpacity(0.9),
-                          fontSize: 35,
-                          fontFamily: 'MavenPro'))
+                  Text(
+                    'ConstantLine',
+                    style: TextStyle(
+                        color: Colors.white.withOpacity(0.9),
+                        fontSize: 35,
+                        fontFamily: 'MavenPro'),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'Monday,03 Mars',
+                    style: TextStyle(
+                        color: Colors.white.withOpacity(0.9),
+                        fontSize: 15,
+                        fontFamily: 'MavenPro'),
+                  ),
+                  Image.asset(
+                    'assets/images/sunny.png',
+                    width: size.width * 0.4,
+                  ),
+                  Text(
+                    'Sunny',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'MavenPro'),
+                  ),
                 ],
               ),
             )
