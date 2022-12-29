@@ -163,6 +163,117 @@ class MyHomePage extends StatelessWidget {
                           color: Colors.white.withOpacity(0.5),
                           fontFamily: 'MavenPro',
                           fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      '32.0 kp/h',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'MavenPro',
+                          fontSize: 25),
+                    ),
+                    SizedBox(height: 20),
+                    //second
+                    Text(
+                      'Pressure',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                          fontFamily: 'MavenPro',
+                          fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      '1025.0 hpa',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'MavenPro',
+                          fontSize: 25),
+                    )
+                  ],
+                )),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Text(
+                      'Gust',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                          fontFamily: 'MavenPro',
+                          fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      '1.0',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'MavenPro',
+                          fontSize: 25),
+                    ),
+                    SizedBox(height: 20),
+                    //second
+                    Text(
+                      'Precipitation',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                          fontFamily: 'MavenPro',
+                          fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      '0.0 mm',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'MavenPro',
+                          fontSize: 25),
+                    )
+                  ],
+                )),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Text(
+                      'Wind',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                          fontFamily: 'MavenPro',
+                          fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      '19.1km/h kp/h',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'MavenPro',
+                          fontSize: 25),
+                    ),
+                    SizedBox(height: 20),
+                    //second
+                    Text(
+                      'Last Update',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                          fontFamily: 'MavenPro',
+                          fontSize: 18),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    const Text(
+                      '2022-03-21',
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontFamily: 'MavenPro',
+                          fontSize: 18),
                     )
                   ],
                 ))
