@@ -50,16 +50,123 @@ class MyHomePage extends StatelessWidget {
                     'assets/images/sunny.png',
                     width: size.width * 0.4,
                   ),
-                  Text(
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
                     'Sunny',
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold,
+                        fontSize: 45,
+                        fontWeight: FontWeight.w600,
                         fontFamily: 'MavenPro'),
+                  ),
+                  const SizedBox(
+                    height: 5,
+                  ),
+                  const Text(
+                    '15@',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 60,
+                        fontWeight: FontWeight.w800,
+                        fontFamily: 'MavenPro'),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              'assets/images/storm.png',
+                              width: size.width * 0.15,
+                            ),
+                            SizedBox(height: 5),
+                            const Text('18.1 km/h',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontFamily: 'MavenPro',
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold)),
+                            SizedBox(height: 1),
+                            Text('Wind',
+                                style: TextStyle(
+                                    color: Colors.white.withOpacity(0.6),
+                                    fontFamily: 'MavenPro',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold))
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                          child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/images/humidity.png',
+                            width: size.width * 0.15,
+                          ),
+                          SizedBox(height: 5),
+                          const Text('81',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'MavenPro',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(height: 10),
+                          Text('Humidity',
+                              style: TextStyle(
+                                  color: Colors.white.withOpacity(0.6),
+                                  fontFamily: 'MavenPro',
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold))
+                        ],
+                      )),
+                      Expanded(
+                          child: Column(
+                        children: [
+                          Image.asset(
+                            'assets/images/wind.png',
+                            width: size.width * 0.15,
+                          ),
+                          SizedBox(height: 5),
+                          const Text('SE',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'MavenPro',
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold)),
+                          SizedBox(height: 10),
+                          Text('Wind Direction',
+                              style: TextStyle(
+                                  color: Colors.white.withOpacity(0.6),
+                                  fontFamily: 'MavenPro',
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold))
+                        ],
+                      ))
+                    ],
                   ),
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                Expanded(
+                    child: Column(
+                  children: [
+                    Text(
+                      'Gust',
+                      style: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                          fontFamily: 'MavenPro',
+                          fontSize: 18),
+                    )
+                  ],
+                ))
+              ],
             )
           ],
         ),
