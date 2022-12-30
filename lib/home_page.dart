@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:weather_app/weather_data.dart';
 
 import 'getLocation.dart';
+
+var dayInfo = DateTime.now();
+var dateFormat = DateFormat('EEEE, d MM, yyyy').format(dayInfo);
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
@@ -54,7 +58,7 @@ class MyHomePage extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        'Monday,03 Mars',
+                        dateFormat,
                         style: TextStyle(
                             color: Colors.white.withOpacity(0.9),
                             fontSize: 15,
