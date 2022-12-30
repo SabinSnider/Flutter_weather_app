@@ -60,16 +60,18 @@ class MyHomePage extends StatelessWidget {
                             fontSize: 15,
                             fontFamily: 'MavenPro'),
                       ),
-                      Image.asset(
-                        'assets/images/sunny.png',
-                        width: size.width * 0.4,
-                      ),
+                      // Image.asset(
+                      //   'assets/images/sunny.png',
+                      //   width: size.width * 0.4,
+                      // ),
+                      Image.network('https:${data?.icon}',
+                          width: size.width * 0.36, fit: BoxFit.fill),
                       const SizedBox(
                         height: 10,
                       ),
-                      const Text(
-                        'Sunny',
-                        style: TextStyle(
+                      Text(
+                        '${data?.condition}',
+                        style: const TextStyle(
                             color: Colors.white,
                             fontSize: 45,
                             fontWeight: FontWeight.w600,
@@ -78,9 +80,9 @@ class MyHomePage extends StatelessWidget {
                       const SizedBox(
                         height: 5,
                       ),
-                      const Text(
-                        '15@',
-                        style: TextStyle(
+                      Text(
+                        '${data?.temp}',
+                        style: const TextStyle(
                             color: Colors.white,
                             fontSize: 60,
                             fontWeight: FontWeight.w800,
@@ -96,8 +98,8 @@ class MyHomePage extends StatelessWidget {
                                   width: size.width * 0.15,
                                 ),
                                 SizedBox(height: 5),
-                                const Text('18.1 km/h',
-                                    style: TextStyle(
+                                Text('${data?.wind} km/h',
+                                    style: const TextStyle(
                                         color: Colors.white,
                                         fontFamily: 'MavenPro',
                                         fontSize: 20,
@@ -120,8 +122,8 @@ class MyHomePage extends StatelessWidget {
                                 width: size.width * 0.15,
                               ),
                               SizedBox(height: 5),
-                              const Text('81',
-                                  style: TextStyle(
+                              Text('${data?.humidity}',
+                                  style: const TextStyle(
                                       color: Colors.white,
                                       fontFamily: 'MavenPro',
                                       fontSize: 20,
@@ -143,8 +145,8 @@ class MyHomePage extends StatelessWidget {
                                 width: size.width * 0.15,
                               ),
                               SizedBox(height: 5),
-                              const Text('SE',
-                                  style: TextStyle(
+                              Text('${data?.wind_dir}',
+                                  style: const TextStyle(
                                       color: Colors.white,
                                       fontFamily: 'MavenPro',
                                       fontSize: 20,
@@ -181,9 +183,9 @@ class MyHomePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        const Text(
-                          '32.0 kp/h',
-                          style: TextStyle(
+                        Text(
+                          '${data?.gust} kp/h',
+                          style: const TextStyle(
                               color: Colors.white,
                               fontFamily: 'MavenPro',
                               fontSize: 25),
@@ -200,9 +202,9 @@ class MyHomePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        const Text(
-                          '1025.0 hpa',
-                          style: TextStyle(
+                        Text(
+                          '${data?.pressure} hpa',
+                          style: const TextStyle(
                               color: Colors.white,
                               fontFamily: 'MavenPro',
                               fontSize: 25),
@@ -213,7 +215,7 @@ class MyHomePage extends StatelessWidget {
                         child: Column(
                       children: [
                         Text(
-                          'Gust',
+                          'UV',
                           style: TextStyle(
                               color: Colors.white.withOpacity(0.5),
                               fontFamily: 'MavenPro',
@@ -222,9 +224,9 @@ class MyHomePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        const Text(
-                          '1.0',
-                          style: TextStyle(
+                        Text(
+                          '${data?.uv}',
+                          style: const TextStyle(
                               color: Colors.white,
                               fontFamily: 'MavenPro',
                               fontSize: 25),
@@ -241,9 +243,9 @@ class MyHomePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        const Text(
-                          '0.0 mm',
-                          style: TextStyle(
+                        Text(
+                          '${data?.pricipe} mm',
+                          style: const TextStyle(
                               color: Colors.white,
                               fontFamily: 'MavenPro',
                               fontSize: 25),
@@ -263,9 +265,9 @@ class MyHomePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        const Text(
-                          '19.1km/h kp/h',
-                          style: TextStyle(
+                        Text(
+                          '${data?.wind}km/h',
+                          style: const TextStyle(
                               color: Colors.white,
                               fontFamily: 'MavenPro',
                               fontSize: 25),
@@ -282,12 +284,12 @@ class MyHomePage extends StatelessWidget {
                         SizedBox(
                           height: 5,
                         ),
-                        const Text(
-                          '2022-03-21',
-                          style: TextStyle(
+                        Text(
+                          '${data?.last_update}',
+                          style: const TextStyle(
                               color: Colors.green,
                               fontFamily: 'MavenPro',
-                              fontSize: 18),
+                              fontSize: 14),
                         )
                       ],
                     ))
