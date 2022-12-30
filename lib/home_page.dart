@@ -36,7 +36,7 @@ class MyHomePage extends StatelessWidget {
                         fontSize: 35,
                         fontFamily: 'MavenPro'),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text(
