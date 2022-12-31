@@ -1,6 +1,9 @@
 # weather_app
 
-A new Flutter project.
+A Flutter project.
+
+#Screenshot
+<Img src ="screenshots/Screenshot1.png" width="300px">
 
 ## Getting Started
 
